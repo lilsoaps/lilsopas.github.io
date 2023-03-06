@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<style>
+  .center {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 2px solid green;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  div {
+    text-align: center;
+  }
+</style>
+
+<body style="background-color: #92ffff;">
+
+  <h1>Detect</h1>
+
+  <div>
+    <form action="/action.js">
+      <label for="fduration">Duration</label>
+      <input type="text" id="fduration" name="fduration"><br><br>
+      <input type="submit" name = "action2" value="Save">
+    </form>
+  </div>
+  <p> escreva um tempo em horas</p>
+  <p>&nbsp&nbsp&nbsp</p>
+
+  <div>
+    <form action="/action.js">
+      <label for="fdistance">Distance</label>
+      <input type="text" id="fdistance" name="fdistance"><br><br>
+      <input type="submit" name = "action" value="Submit">
+    </form>
+  </div>
+  <p > escreva uma distancia em km</p>
+
+
+  <script>
+
+    function myFunction() {
+      var x = document.getElementById("fduration").value;
+      document.getElementById("demo").innerHTML = x;
+      var y = document.getElementById("fdistance").value;
+      document.getElementById("demo").innerHTML = y
+
+    }
+
+  </script>
+
+
+
+
+
+</body>
+
+</html>
